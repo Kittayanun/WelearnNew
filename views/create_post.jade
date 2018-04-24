@@ -1,0 +1,16 @@
+doctype html
+html
+  body
+    h1 Tutor Page
+    form(method='POST', action='/topic/create')
+      br
+      | Topic:
+      input#title_text(name='title_text', placeholder='Enter your topic')
+      br
+      br
+      | Detail:
+      br
+      textarea#detail_text(name='detail_text', placeholder='Enter your detail')
+      br
+      input(type='submit', value='post')
+      br

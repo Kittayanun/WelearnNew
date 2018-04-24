@@ -1,0 +1,16 @@
+doctype html
+html
+  title TutorPage
+  body
+    h1 Tutor Page
+    form(method='POST', action='/topic/createPost')
+      button#post_button(name='post_button') Creat Post
+    ul
+    for i in topic_list
+        h3  Topic :  #{i.title}
+        p 
+          a(href="http://localhost:3000/topic/detail/#{i.id}") #{i.title}
+        li Detail :  #{i.detail}
+
+          
+        
