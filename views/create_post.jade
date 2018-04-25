@@ -2,7 +2,7 @@ doctype html
 html
   body
     h1 Tutor Page
-    form(method='POST', action='/topic/create')
+    form(method='POST', action='/tutor/create')
       br
       | Topic:
       input#title_text(name='title_text', placeholder='Enter your topic')
@@ -12,5 +12,5 @@ html
       br
       textarea#detail_text(name='detail_text', placeholder='Enter your detail')
       br
-      input(type='submit', value='post')
+      input(type='submit', value='post', name='submit_text')
       br

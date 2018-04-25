@@ -3,10 +3,20 @@ html
   title Detail
   |     
   body
-    h1 Hiiiii        
+    ul
+        h3  Topic :  #{topic_list.title}
+        br 
+        li Detail :  #{topic_list.detail}
+
+    form(method='POST', action='/tutor/create/comment')
+        br
+        | comment:
+        br
+        textarea#comment_text(name='comment_text', placeholder='Enter your comment')
+        br
+        input(type='submit', value='comment', name='submit_comment')
+        br
+    h1 Comment:
     br
-          
-    h3 Detail:
-    |   hello 
-
-
+    //h1 #{topic_list.comment}
+   

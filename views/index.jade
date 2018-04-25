@@ -1,5 +1,13 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+doctype html
+html
+  title HomePage
+  body
+    h1 Home Page
+    form(method='POST', action='/tutor')
+      input(type='submit', name='tutor_button', value='Tutor')
+    
+    form(method='POST', action='/')
+      input(type='submit', name='Examination_button', value='Examination')
+    
+          
+        
